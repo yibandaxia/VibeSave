@@ -13,6 +13,7 @@ VibeSave 是一款面向 Vibe Coding 用户的 macOS 本地项目存档与恢复
 AI 把代码改坏了，或者你想回到几轮修改之前？不需要理解 Git、Commit、Branch，也不用手动复制整个项目。像游戏读档一样找到之前的存档，然后回到那个版本即可。
 
 > **放心改，大不了读档。**
+<img width="2360" height="1520" alt="首页1" src="https://github.com/user-attachments/assets/9378be30-32f8-4cf6-b02b-d901e9934523" />
 
 ## 下载 VibeSave
 
@@ -37,7 +38,7 @@ open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
 
 ### 首次打开提示
 
-当前 GitHub 分发版本使用 ad-hoc 签名，不能替代 Apple Developer ID 签名和公证。如果 macOS 显示开发者验证提示，请在 Finder 中按住 Control 点击 VibeSave，选择“打开”并确认；也可以前往“系统设置 → 隐私与安全性”允许打开。
+当前 GitHub 分发版本使用 ad-hoc 签名，如果 macOS 显示开发者验证提示，请在 Finder 中按住 Control 点击 VibeSave，选择“打开”并确认；也可以前往“系统设置 → 隐私与安全性”允许打开。
 
 ## 为什么做 VibeSave
 
@@ -94,6 +95,8 @@ A ── B ── C ── D
 - 当前项目是从哪条路线演变而来的。
 
 这一切都不需要你自己创建和管理 Git Branch。
+<img width="2360" height="1520" alt="树状图" src="https://github.com/user-attachments/assets/cf46473f-591e-4062-bbaa-fb7b5a1151d9" />
+
 
 ### 🌱 从任何旧存档重新开始
 
