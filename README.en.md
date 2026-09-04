@@ -13,6 +13,8 @@ VibeSave is a local project snapshot and recovery tool for macOS, built for vibe
 Did the AI break your code? Want to go back a few prompts? You do not need to understand Git, commits, or branches, and you do not need to copy the entire project by hand. Find an earlier save and restore it—just like loading a saved game.
 
 > **Code freely. You can always load a save.**
+<img width="2360" height="1520" alt="英文首页" src="https://github.com/user-attachments/assets/4aab8f3e-5954-418c-ac25-e3fdcabc8f31" />
+
 
 ## Download VibeSave
 
@@ -94,6 +96,7 @@ You might reach D, decide that the direction is wrong, return to C, and try a di
 - Which path led to the current project state.
 
 You get this context without creating or managing Git branches yourself.
+<img width="2360" height="1520" alt="英文2" src="https://github.com/user-attachments/assets/a55f3378-f282-4314-8feb-8963a7052216" />
 
 ### 🌱 Start again from any previous save
 
