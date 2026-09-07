@@ -23,15 +23,14 @@ VibeSave 当前面向 macOS 用户。
 
 **不需要安装 Git，也不需要克隆本仓库。**
 
-前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
-备注：该版本有点问题，正在修改中
+前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG；也可以直接下载 [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg)。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
 
 ### 通过终端下载
 
-Release 文件名包含版本号。将下面的 `0.1.0` 替换为要下载的版本：
+Release 文件名包含版本号。当前版本的下载命令如下：
 
 ```bash
-VERSION="0.1.0"
+VERSION="0.2.0"
 curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/VibeSave_${VERSION}_universal.dmg" \
   -o "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
 open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
@@ -186,12 +185,13 @@ VibeSave 不会替代你的 AI Coding 工具。它工作在 AI Coding 工具旁�
 - ✅ 版本关系树
 - ✅ 从旧存档继续开发
 - ✅ AI 自动生成版本改动摘要
+- ✅ 单文件精准恢复（Pro）
+- ✅ 按存档状态筛选时间线
 
 ## 接下来准备做什么
 
 目前正在考虑：
 
-- 单个文件恢复
 - 云备份
 - 更多 AI Coding 工具支持
 

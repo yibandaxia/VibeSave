@@ -24,15 +24,14 @@ VibeSave is currently available for macOS.
 
 **You do not need to install Git or clone this repository.**
 
-Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG. Open it, then drag VibeSave into your Applications folder.
-There is an issue with this version, and it is being revised
+Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG, or download the [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg) directly. Open it, then drag VibeSave into your Applications folder.
 
 ### Download from the terminal
 
-Release filenames include the version number. Replace `0.1.0` below with the version you want to download:
+Release filenames include the version number. To download the current version:
 
 ```bash
-VERSION="0.1.0"
+VERSION="0.2.0"
 curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/VibeSave_${VERSION}_universal.dmg" \
   -o "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
 open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
@@ -186,12 +185,13 @@ Your code belongs to you. VibeSave is built around local saves, and your project
 - ✅ Version relationship tree
 - ✅ Continue development from an earlier save
 - ✅ AI-generated version summaries
+- ✅ Precise single-file restore (Pro)
+- ✅ Filter the timeline by save status
 
 ## What's Next
 
 We are currently considering:
 
-- Restoring individual files
 - Cloud backup
 - Support for more AI coding tools
 
