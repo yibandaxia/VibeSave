@@ -15,6 +15,7 @@ VibeSave 是一款面向 macOS 的 Vibe Coding 自动存档与版本恢复工具
 🌐 https://vibesave.app
 
 **放心改，大不了读档。**
+
 <img width="2360" height="1520" alt="首页1" src="https://github.com/user-attachments/assets/9378be30-32f8-4cf6-b02b-d901e9934523" />
 
 ## 下载 VibeSave
