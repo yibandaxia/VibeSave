@@ -1,18 +1,21 @@
 <div align="center">
   <img src="public/vibesave-logo.png" width="128" alt="VibeSave icon">
   <h1>VibeSave</h1>
-  <p><strong>Give vibe coding a save button.</strong></p>
+  <p><strong>Save Points for Vibe Coding</strong></p>
+  Save your code like a game.
   <p>
     <a href="README.md">简体中文</a> ·
     <a href="README.en.md">English</a>
   </p>
 </div>
 
-VibeSave is a local project snapshot and recovery tool for macOS, built for vibe coders. When you use Codex to modify a project, VibeSave automatically preserves its key versions.
+VibeSave is a macOS backup and version recovery app for vibe coding.
+It automatically creates save points while you work with Codex, so you can
+review what changed and return to an earlier working version when something breaks.
 
-Did the AI break your code? Want to go back a few prompts? You do not need to understand Git, commits, or branches, and you do not need to copy the entire project by hand. Find an earlier save and restore it—just like loading a saved game.
+🌐 https://vibesave.app
 
-> **Code freely. You can always load a save.**
+ **Code freely. You can always load a save.**
 <img width="2360" height="1520" alt="英文首页" src="https://github.com/user-attachments/assets/4aab8f3e-5954-418c-ac25-e3fdcabc8f31" />
 
 
