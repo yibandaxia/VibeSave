@@ -1,18 +1,20 @@
 <div align="center">
   <img src="public/vibesave-logo.png" width="128" alt="VibeSave 图标">
   <h1>VibeSave</h1>
-  <p><strong>给 Vibe Coding 一个存档键。</strong></p>
+  <p><strong>为 Vibe Coding 设计的存档工具</strong></p>
+  像游戏一样，给代码存个档。
   <p>
     <a href="README.md">简体中文</a> ·
     <a href="README.en.md">English</a>
   </p>
 </div>
 
-VibeSave 是一款面向 Vibe Coding 用户的 macOS 本地项目存档与恢复工具。当你使用 Codex 修改项目时，VibeSave 会自动保留关键版本。
+VibeSave 是一款面向 macOS 的 Vibe Coding 自动存档与版本恢复工具。
+在你使用 Codex 编程时，它会自动创建存档点，让你查看历史修改，并在代码出现问题时恢复到之前正常工作的版本。
 
-AI 把代码改坏了，或者你想回到几轮修改之前？不需要理解 Git、Commit、Branch，也不用手动复制整个项目。像游戏读档一样找到之前的存档，然后回到那个版本即可。
+🌐 https://vibesave.app
 
-> **放心改，大不了读档。**
+**放心改，大不了读档。**
 <img width="2360" height="1520" alt="首页1" src="https://github.com/user-attachments/assets/9378be30-32f8-4cf6-b02b-d901e9934523" />
 
 ## 下载 VibeSave
