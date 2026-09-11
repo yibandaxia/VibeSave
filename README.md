@@ -1,36 +1,38 @@
 <div align="center">
-  <img src="public/vibesave-logo.png" width="128" alt="VibeSave 图标">
+  <img src="public/vibesave-logo.png" width="128" alt="VibeSave icon">
   <h1>VibeSave</h1>
-  <p><strong>为 Vibe Coding 设计的存档工具</strong></p>
-  像游戏一样，给代码存个档。
+  <p><strong>Save Points for Vibe Coding</strong></p>
+  Save your code like a game.
   <p>
-    <a href="README.md">简体中文</a> ·
-    <a href="README.en.md">English</a>
+    <a href="README.md">English</a> ·
+    <a href="README.zh-CN.md">简体中文</a>
   </p>
 </div>
 
-VibeSave 是一款面向 macOS 的 Vibe Coding 自动存档与版本恢复工具。
-在你使用 Codex 编程时，它会自动创建存档点，让你查看历史修改，并在代码出现问题时恢复到之前正常工作的版本。
+VibeSave is a macOS backup and version recovery app for vibe coding.
+It automatically creates save points while you work with Codex, so you can
+review what changed and return to an earlier working version when something breaks.
 
 🌐 https://vibesave.app
 
-**放心改，大不了读档。**
+ **Code freely. You can always load a save.**
+ 
+<img width="2360" height="1520" alt="英文首页" src="https://github.com/user-attachments/assets/4aab8f3e-5954-418c-ac25-e3fdcabc8f31" />
 
-<img width="2360" height="1520" alt="首页1" src="https://github.com/user-attachments/assets/9378be30-32f8-4cf6-b02b-d901e9934523" />
 
-## 下载 VibeSave
+## Download VibeSave
 
-VibeSave 当前面向 macOS 用户。
+VibeSave is currently available for macOS.
 
-### 普通用户
+### For most users
 
-**不需要安装 Git，也不需要克隆本仓库。**
+**You do not need to install Git or clone this repository.**
 
-前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG；也可以直接下载 [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg)。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
+Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG, or download the [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg) directly. Open it, then drag VibeSave into your Applications folder.
 
-### 通过终端下载
+### Download from the terminal
 
-Release 文件名包含版本号。当前版本的下载命令如下：
+Release filenames include the version number. To download the current version:
 
 ```bash
 VERSION="0.2.0"
@@ -39,51 +41,51 @@ curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/Vi
 open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
 ```
 
-### 首次打开提示
+### First-launch note
 
-当前 GitHub 分发版本使用 ad-hoc 签名，如果 macOS 显示开发者验证提示，请在 Finder 中按住 Control 点击 VibeSave，选择“打开”并确认；也可以前往“系统设置 → 隐私与安全性”允许打开。
+The current GitHub build uses ad-hoc signing, which is not a substitute for Apple Developer ID signing and notarization. If macOS shows a developer verification warning, Control-click VibeSave in Finder, choose **Open**, and confirm. You can also allow the app from **System Settings → Privacy & Security**.
 
-## 为什么做 VibeSave
+## Why We Built VibeSave
 
-Vibe Coding 让修改代码变得越来越快，但问题也随之出现：
+Vibe coding makes it faster than ever to change code, but it also creates new problems:
 
-- AI 一次可能修改很多文件。
-- 有时候改完才发现结果不对。
-- 连续和 AI 对话几轮以后，很难知道到底是哪一步出了问题。
-- 想回到之前能正常运行的版本，却不知道怎么回去。
-- Git 可以解决这些问题，但 Git 本身又有一定学习成本。
+- An AI may change many files in a single pass.
+- You may not realize that the result is wrong until the changes are complete.
+- After several rounds of prompting, it can be difficult to tell which step introduced a problem.
+- You may want to return to a working version but have no idea how.
+- Git can solve these problems, but Git has its own learning curve.
 
-所以我们做了 VibeSave。
+That is why we built VibeSave.
 
-VibeSave 的目标不是重新做一个 Git 客户端。我们希望把版本管理变成一件任何人都能理解的事情：**修改之前存个档，改坏了就读档。**
+VibeSave is not trying to be another Git client. We want version management to be understandable to anyone: **save before you make changes; load the save if something breaks.**
 
-## VibeSave 可以做什么
+## What VibeSave Can Do
 
-### 🎮 自动保存每一轮 AI Coding
+### 🎮 Automatically save every round of AI coding
 
-VibeSave 可以跟随你的 AI Coding 工作流，在合适的时机自动为项目创建存档。你不需要手动复制项目，也不用记得什么时候应该 Commit；继续和 AI 对话即可。
+VibeSave follows your AI coding workflow and creates project saves at the right moments. You do not need to copy the project manually or remember when to commit. Just keep working with your AI.
 
-### 🕐 看懂项目是怎样一步步变成现在这样的
+### 🕐 See how your project reached its current state
 
-每一次存档都会出现在项目时间线中。你可以看到：
+Every save appears on the project timeline. You can see:
 
-- 什么时候进行了修改。
-- 这一轮让 AI 做了什么。
-- AI 总结出的实际改动。
-- 哪些文件发生了变化。
-- 这次修改是否达到了你的预期。
+- When a change was made.
+- What you asked the AI to do.
+- What the AI says actually changed.
+- Which files changed.
+- Whether the result matched your expectations.
 
-不再需要靠回忆判断：“到底是哪一次修改把项目搞坏了？”
+No more relying on memory to answer: “Which change broke the project?”
 
-### ↩️ 一键回到之前的版本
+### ↩️ Return to an earlier version in one step
 
-如果一次修改把项目搞坏了，可以直接选择之前正常工作的存档进行恢复。无需输入 Git 命令，也不需要理解 Checkout、Reset 等概念。
+If a change breaks the project, select an earlier working save and restore it. You do not need to enter Git commands or understand concepts such as checkout or reset.
 
-找到那个存档，然后选择：**回到这里。**
+Find the save, then choose: **Return here.**
 
-### 🌳 看清不同版本之间的关系
+### 🌳 Understand the relationships between versions
 
-项目开发并不一定永远是一条直线：
+Development does not always follow a straight line:
 
 ```text
 A ── B ── C ── D
@@ -91,37 +93,36 @@ A ── B ── C ── D
           └── E ── F
 ```
 
-你可能开发到 D 后发现方向不对，于是回到 C，重新尝试另一种方案。VibeSave 会记录这些版本之间的关系，让你了解：
+You might reach D, decide that the direction is wrong, return to C, and try a different approach. VibeSave records these relationships, so you can see:
 
-- 一个版本是从哪个存档继续产生的。
-- 哪些版本属于同一条开发路线。
-- 当前项目是从哪条路线演变而来的。
+- Which save a version continued from.
+- Which versions belong to the same development path.
+- Which path led to the current project state.
 
-这一切都不需要你自己创建和管理 Git Branch。
-<img width="2360" height="1520" alt="树状图" src="https://github.com/user-attachments/assets/cf46473f-591e-4062-bbaa-fb7b5a1151d9" />
+You get this context without creating or managing Git branches yourself.
+<img width="2360" height="1520" alt="英文2" src="https://github.com/user-attachments/assets/a55f3378-f282-4314-8feb-8963a7052216" />
 
+### 🌱 Start again from any previous save
 
-### 🌱 从任何旧存档重新开始
+Found an earlier version and thought, “This would be a better place to start over”? Choose: **Continue from here.**
 
-看到一个之前的版本，觉得“其实从这里重新做会更好”？直接选择：**从这里继续。**
+VibeSave keeps the original history and starts a new development path from that save. You do not need to understand what “creating a branch” means first.
 
-VibeSave 会保留原来的版本历史，同时从这个存档开始一条新的开发路线。你不需要先理解什么叫“创建分支”。
+### ✨ Let AI summarize what actually changed
 
-### ✨ AI 自动总结“这一版到底改了什么”
+One of the biggest problems with vibe coding is that what you ask an AI to do is not necessarily the full set of changes it ultimately makes.
 
-Vibe Coding 最大的问题之一是：用户告诉 AI 自己想做什么，不代表 AI 最后真的只改了这些东西。
+VibeSave can generate a change summary for each round, helping you quickly understand:
 
-VibeSave 可以为每一轮修改生成真正的改动摘要，帮助你快速理解：
+- What changed.
+- Which features were affected.
+- Which files changed.
 
-- 这次主要改了什么。
-- 涉及了哪些功能。
-- 哪些文件发生了变化。
+The timeline records not only “what I asked the AI to do,” but “what actually happened in this version.”
 
-让时间线记录的不只是“我当时让 AI 做了什么”，而是“这一版实际上发生了什么”。
+## Manage Code Like Saved Games
 
-## 像游戏存档一样管理代码
-
-传统版本控制里经常会出现这些词：
+Traditional version control often uses terms such as:
 
 ```text
 Commit
@@ -130,163 +131,163 @@ Checkout
 HEAD
 ```
 
-VibeSave 尽量不要求你理解这些概念，而是把它们表达成：
+VibeSave tries not to make you learn those concepts. Instead, it uses:
 
 ```text
-存档
-开发路线
-从这里继续
-回到这里
-当前版本
+Save
+Development path
+Continue from here
+Return here
+Current version
 ```
 
-你只需要关心：**我的项目现在是什么状态，我想回到哪里。** 底层的版本管理机制交给 VibeSave。
+You only need to answer: **What state is my project in, and where do I want to return?** VibeSave handles the underlying version-management mechanics.
 
-## 适合谁
+## Who VibeSave Is For
 
-VibeSave 更适合：
+VibeSave is especially useful for:
 
-- 正在使用 AI Coding 或 Vibe Coding 的用户。
-- 不熟悉 Git，但希望拥有版本恢复能力的人。
-- 经常让 AI 一次修改多个文件的人。
-- 担心 AI 把已经能运行的项目改坏的人。
-- 希望直观看懂项目修改历史的人。
-- 希望大胆尝试不同方案，又不想丢掉旧版本的人。
+- People using AI coding or vibe coding tools.
+- People who are unfamiliar with Git but want the ability to restore earlier versions.
+- People who often ask an AI to change multiple files at once.
+- People worried that an AI may break a project that already works.
+- People who want a clear visual history of project changes.
+- People who want to explore different approaches without losing earlier versions.
 
-如果你已经非常熟悉 Git，并且习惯通过命令行管理 Commit、Branch、Rebase，那么 VibeSave 可能不是你的必需工具。
+If you are already highly proficient with Git and prefer to manage commits, branches, and rebases from the command line, VibeSave may not be essential for you.
 
-## 支持哪些 AI Coding 工具
+## Supported AI Coding Tools
 
-VibeSave 不会替代你的 AI Coding 工具。它工作在 AI Coding 工具旁边，负责替项目留好“后路”。
+VibeSave does not replace your AI coding tool. It works alongside it and gives your project a way back.
 
-**当前支持**
+**Currently supported**
 
 - ✅ OpenAI Codex
 
-**计划支持**
+**Planned**
 
-- ⏳ 更多 AI Coding Agent
+- ⏳ More AI coding agents
 
-你继续使用自己熟悉的 AI 写代码，VibeSave 负责存档和恢复。
+Keep writing code with the AI you know. VibeSave handles saving and recovery.
 
-## 本地优先
+## Local First
 
-你的代码属于你。VibeSave 以本地存档为核心，项目存档和版本历史保存在你的设备上。你无需把项目托管到 GitHub，也能使用 VibeSave 的本地版本管理能力。
+Your code belongs to you. VibeSave is built around local saves, and your project snapshots and version history stay on your device. You do not need to host your project on GitHub to use VibeSave's local version-management features.
 
-> V1 只确认项目文件是否已完整存档，不会运行项目命令，也不会判断项目能否编译、测试通过或正常运行。
+> V1 verifies only that project files were completely saved. It does not run project commands or determine whether a project builds, passes tests, or runs correctly.
 
-## 当前功能
+## Current Features
 
-- ✅ 多项目管理
-- ✅ 本地项目自动存档
-- ✅ 项目修改时间线
-- ✅ 文件变化统计
-- ✅ 一键恢复存档
-- ✅ AI Coding 任务记录
-- ✅ Codex 工作流集成
-- ✅ 项目保护状态
-- ✅ 版本关系树
-- ✅ 从旧存档继续开发
-- ✅ AI 自动生成版本改动摘要
-- ✅ 单文件精准恢复（Pro）
-- ✅ 按存档状态筛选时间线
+- ✅ Multi-project management
+- ✅ Automatic local project saves
+- ✅ Project change timeline
+- ✅ File change statistics
+- ✅ One-step save restoration
+- ✅ AI coding task history
+- ✅ Codex workflow integration
+- ✅ Project protection status
+- ✅ Version relationship tree
+- ✅ Continue development from an earlier save
+- ✅ AI-generated version summaries
+- ✅ Precise single-file restore (Pro)
+- ✅ Filter the timeline by save status
 
-## 接下来准备做什么
+## What's Next
 
-目前正在考虑：
+We are currently considering:
 
-- 云备份
-- 更多 AI Coding 工具支持
+- Cloud backup
+- Support for more AI coding tools
 
-如果你特别希望加入某项能力，欢迎[提交 Issue](https://github.com/yibandaxia/VibeSave/issues)。
+If there is a feature you especially want, please [open an issue](https://github.com/yibandaxia/VibeSave/issues).
 
-## VibeSave 快速信息
+## VibeSave at a Glance
 
-| 项目 | 信息 |
+| Item | Details |
 | --- | --- |
-| 产品名称 | VibeSave |
-| 产品类型 | Vibe Coding 项目存档与恢复工具 |
-| 适合用户 | 不熟悉 Git 的 Vibe Coding 用户 |
-| 当前平台 | macOS |
-| 当前支持的 AI Coding 工具 | OpenAI Codex |
-| 是否需要学习 Git | 不需要 |
-| 是否必须把项目上传 GitHub | 不需要 |
-| 存档方式 | 本地项目存档 |
-| 版本展示 | 时间线 + 版本关系 |
-| 恢复方式 | 从历史存档恢复 |
-| 安装方式 | 从 GitHub Releases 下载 DMG |
+| Product | VibeSave |
+| Type | Vibe coding project snapshot and recovery tool |
+| Intended users | Vibe coders who are unfamiliar with Git |
+| Current platform | macOS |
+| Currently supported AI coding tool | OpenAI Codex |
+| Git knowledge required | No |
+| GitHub hosting required | No |
+| Storage | Local project saves |
+| Version view | Timeline + version relationships |
+| Recovery | Restore from a historical save |
+| Installation | Download a DMG from GitHub Releases |
 
-## 关于 VibeSave
+## About VibeSave
 
-VibeSave 是一款面向 Vibe Coding 用户的 macOS 本地项目存档、版本历史和代码恢复工具，主要适合使用 Codex 等 AI Coding 工具、但不熟悉 Git 的用户。
+VibeSave is a local macOS project snapshot, version-history, and code-recovery tool for vibe coders. It is designed primarily for people who use AI coding tools such as Codex but are unfamiliar with Git.
 
-VibeSave 可以跟随 AI Coding 工作流自动保存项目关键版本、记录项目修改历史、生成改动摘要，并在 AI 修改出现问题时恢复到之前的存档。它还可以记录不同存档之间的版本关系，并允许用户从任何历史存档重新开始一条开发路线。
+VibeSave can follow an AI coding workflow, automatically preserve important project versions, record project history, generate change summaries, and restore an earlier save when an AI change causes problems. It can also record the relationships between saves and let you start a new development path from any historical save.
 
-VibeSave 的核心理念是：**像游戏一样存档和读档，而不是要求用户先学习 Git。**
+VibeSave's core idea is simple: **save and load code like a game instead of requiring users to learn Git first.**
 
-如果你正在寻找以下工具，VibeSave 可能适合你：
+VibeSave may be a good fit if you are looking for:
 
-- Vibe Coding 项目备份工具
-- AI Coding 代码恢复工具
-- Codex 项目版本管理工具
-- 不需要学习 Git 的版本管理工具
-- 本地代码快照工具
-- AI 修改代码后的 rollback 或 restore 工具
-- Vibe Coding 项目历史工具
+- A backup tool for vibe coding projects
+- An AI coding recovery tool
+- A Codex project version-management tool
+- Version management without learning Git
+- A local code snapshot tool
+- A rollback or restore tool for AI-generated code changes
+- A project-history tool for vibe coding
 
-## 常见问题
+## Frequently Asked Questions
 
-### VibeSave 和 Git 有什么区别
+### How is VibeSave different from Git?
 
-Git 是专业的版本控制系统。VibeSave 面向不熟悉 Git 的 Vibe Coding 用户，把版本管理重新表达成“存档”“回到这里”“从这里继续”等更容易理解的操作。你不需要理解 Commit、Branch、Checkout 等 Git 概念也可以使用。
+Git is a professional version-control system. VibeSave is designed for vibe coders who are unfamiliar with Git, and presents version management as approachable actions such as “Save,” “Return here,” and “Continue from here.” You can use it without understanding Git concepts such as commits, branches, or checkout.
 
-### 使用 VibeSave 必须安装 Git 吗
+### Do I need to install Git to use VibeSave?
 
-不需要。普通用户下载安装 VibeSave 后即可使用。
+No. Most users can download and install VibeSave without installing Git.
 
-### 使用 VibeSave 必须把代码上传到 GitHub 吗
+### Do I need to upload my code to GitHub?
 
-不需要。VibeSave 的核心存档与版本历史保存在本地设备中。GitHub 目前主要用于 VibeSave 自身的软件分发。
+No. VibeSave keeps its core saves and version history on your local device. GitHub is currently used mainly to distribute VibeSave itself.
 
-### VibeSave 可以和 Codex 一起使用吗
+### Can I use VibeSave with Codex?
 
-可以。OpenAI Codex 是 VibeSave 当前已经支持的 AI Coding 工作流。
+Yes. OpenAI Codex is the AI coding workflow that VibeSave currently supports.
 
-### Cursor、Claude Code 可以使用吗
+### Can I use Cursor or Claude Code?
 
-当前版本主要支持 Codex，更多 AI Coding Agent 的适配正在规划中。
+The current version focuses on Codex. Integrations with more AI coding agents are planned.
 
-### AI 把代码改坏以后怎么办
+### What should I do if an AI breaks my code?
 
-打开对应项目，在 VibeSave 的时间线中找到之前正常工作的存档，然后选择恢复即可。
+Open the project in VibeSave, find an earlier working save on the timeline, and restore it.
 
-### 从旧版本重新开始，后面的存档会消失吗
+### If I start again from an earlier version, will later saves disappear?
 
-不会。VibeSave 会保留原来的版本历史，并记录新的开发路线。
+No. VibeSave keeps the original version history and records the new development path.
 
-### VibeSave 是 Git GUI 吗
+### Is VibeSave a Git GUI?
 
-不是。VibeSave 并不希望把 Git 的复杂操作换成几个图形按钮，而是希望让不了解 Git 的用户也拥有版本管理带来的安全感。
+No. VibeSave is not intended to replace complex Git operations with graphical buttons. Its goal is to give people who do not know Git the confidence and safety that version management provides.
 
-## 反馈与建议
+## Feedback
 
-VibeSave 目前仍处于早期阶段。如果你：
+VibeSave is still at an early stage. We would especially like to hear from you if:
 
-- 在 Vibe Coding 时经常遇到版本恢复问题。
-- 觉得某个操作仍然太像 Git。
-- 希望支持其他 AI Coding 工具。
-- 有关于存档、恢复或版本管理的建议。
-- 遇到了 Bug。
+- You often run into version-recovery problems while vibe coding.
+- An operation still feels too much like Git.
+- You want support for another AI coding tool.
+- You have ideas about saving, recovery, or version management.
+- You found a bug.
 
-欢迎：
+You can:
 
-- [提交 GitHub Issue](https://github.com/yibandaxia/VibeSave/issues)
-- 发送邮件至 [vibesave@foxmail.com](mailto:vibesave@foxmail.com)
+- [Open a GitHub issue](https://github.com/yibandaxia/VibeSave/issues)
+- Email [vibesave@foxmail.com](mailto:vibesave@foxmail.com)
 
-尤其欢迎不熟悉 Git 的用户告诉我们：**哪些地方你看不懂？** 这对 VibeSave 很重要。
+If you are unfamiliar with Git, we especially want to know: **What do you find difficult to understand?** That feedback matters to VibeSave.
 
 <div align="center">
   <strong>VibeSave</strong><br>
-  给 Vibe Coding 一个存档键。<br>
-  放心改，大不了读档。
+  Give vibe coding a save button.<br>
+  Code freely. You can always load a save.
 </div>
