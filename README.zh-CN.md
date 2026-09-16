@@ -26,7 +26,7 @@ VibeSave 当前面向 macOS 用户。
 
 **不需要安装 Git，也不需要克隆本仓库。**
 
-前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG；也可以直接下载 [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg)。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
+前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG；也可以直接下载 [VibeSave 0.3.1 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.3.1/VibeSave_0.3.1_universal.dmg)。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
 
 ### 通过终端下载
 
