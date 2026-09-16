@@ -28,7 +28,7 @@ VibeSave is currently available for macOS.
 
 **You do not need to install Git or clone this repository.**
 
-Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG, or download the [VibeSave 0.2.0 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.2.0/VibeSave_0.2.0_universal.dmg) directly. Open it, then drag VibeSave into your Applications folder.
+Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG, or download the [VibeSave 0.3.1 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.3.1/VibeSave_0.3.1_universal.dmg) directly. Open it, then drag VibeSave into your Applications folder.
 
 ### Download from the terminal
 
