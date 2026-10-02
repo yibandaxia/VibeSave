@@ -33,7 +33,7 @@ VibeSave 当前面向 macOS 用户。
 Release 文件名包含版本号。当前版本的下载命令如下：
 
 ```bash
-VERSION="0.2.0"
+VERSION="0.3.1"
 curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/VibeSave_${VERSION}_universal.dmg" \
   -o "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
 open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
