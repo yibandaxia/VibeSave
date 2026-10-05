@@ -26,22 +26,21 @@ VibeSave 当前面向 macOS 用户。
 
 **不需要安装 Git，也不需要克隆本仓库。**
 
-前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest)，下载最新版 DMG；也可以直接下载 [VibeSave 0.3.1 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.3.1/VibeSave_0.3.1_universal.dmg)。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
+直接下载最新版 [VibeSave.dmg](https://github.com/yibandaxia/VibeSave/releases/latest/download/VibeSave.dmg)，或前往 [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) 查看发布说明。安装包同时支持 Apple Silicon 和 Intel Mac。打开后，将 VibeSave 拖入“应用程序”文件夹即可。
 
 ### 通过终端下载
 
-Release 文件名包含版本号。当前版本的下载命令如下：
+下载文件名固定为 `VibeSave.dmg`，以下链接会自动下载最新发布版本：
 
 ```bash
-VERSION="0.3.1"
-curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/VibeSave_${VERSION}_universal.dmg" \
-  -o "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
-open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
+curl -fL "https://github.com/yibandaxia/VibeSave/releases/latest/download/VibeSave.dmg" \
+  -o "$HOME/Downloads/VibeSave.dmg"
+open "$HOME/Downloads/VibeSave.dmg"
 ```
 
 ### 首次打开提示
 
-当前 GitHub 分发版本使用 ad-hoc 签名，如果 macOS 显示开发者验证提示，请在 Finder 中按住 Control 点击 VibeSave，选择“打开”并确认；也可以前往“系统设置 → 隐私与安全性”允许打开。
+当前 VibeSave 0.3.1 下载版本已使用 Apple Developer ID 证书签名，并通过 Apple 公证。首次打开时，macOS 可能询问是否打开从互联网下载的应用，确认打开即可。各版本的签名与公证状态请查看对应发布说明。
 
 ## 为什么做 VibeSave
 

@@ -28,22 +28,21 @@ VibeSave is currently available for macOS.
 
 **You do not need to install Git or clone this repository.**
 
-Go to [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) and download the latest DMG, or download the [VibeSave 0.3.1 Universal DMG](https://github.com/yibandaxia/VibeSave/releases/download/v0.3.1/VibeSave_0.3.1_universal.dmg) directly. Open it, then drag VibeSave into your Applications folder.
+Download the latest [VibeSave.dmg](https://github.com/yibandaxia/VibeSave/releases/latest/download/VibeSave.dmg), or visit [GitHub Releases](https://github.com/yibandaxia/VibeSave/releases/latest) for release notes. The DMG supports both Apple Silicon and Intel Macs. Open it, then drag VibeSave into your Applications folder.
 
 ### Download from the terminal
 
-Release filenames include the version number. To download the current version:
+The download filename is always `VibeSave.dmg`. This link automatically downloads the latest release:
 
 ```bash
-VERSION="0.3.1"
-curl -L "https://github.com/yibandaxia/VibeSave/releases/download/v${VERSION}/VibeSave_${VERSION}_universal.dmg" \
-  -o "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
-open "$HOME/Downloads/VibeSave_${VERSION}_universal.dmg"
+curl -fL "https://github.com/yibandaxia/VibeSave/releases/latest/download/VibeSave.dmg" \
+  -o "$HOME/Downloads/VibeSave.dmg"
+open "$HOME/Downloads/VibeSave.dmg"
 ```
 
 ### First-launch note
 
-The current GitHub build uses ad-hoc signing, which is not a substitute for Apple Developer ID signing and notarization. If macOS shows a developer verification warning, Control-click VibeSave in Finder, choose **Open**, and confirm. You can also allow the app from **System Settings → Privacy & Security**.
+The current VibeSave 0.3.1 download is signed with an Apple Developer ID certificate and notarized by Apple. On first launch, macOS may ask you to confirm that you want to open an app downloaded from the internet. Check the release notes for signing and notarization details for each version.
 
 ## Why We Built VibeSave
 
