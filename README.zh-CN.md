@@ -40,7 +40,7 @@ open "$HOME/Downloads/VibeSave.dmg"
 
 ### 首次打开提示
 
-当前 VibeSave 0.3.1 下载版本已使用 Apple Developer ID 证书签名，并通过 Apple 公证。首次打开时，macOS 可能询问是否打开从互联网下载的应用，确认打开即可。各版本的签名与公证状态请查看对应发布说明。
+当前 VibeSave 0.3.3 下载版本已使用 Apple Developer ID 证书签名，并通过 Apple 公证。首次打开时，macOS 可能询问是否打开从互联网下载的应用，确认打开即可。各版本的签名与公证状态请查看对应发布说明。
 
 ## 为什么做 VibeSave
 
