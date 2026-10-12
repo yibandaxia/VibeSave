@@ -42,7 +42,7 @@ open "$HOME/Downloads/VibeSave.dmg"
 
 ### First-launch note
 
-The current VibeSave 0.3.3 download is signed with an Apple Developer ID certificate and notarized by Apple. On first launch, macOS may ask you to confirm that you want to open an app downloaded from the internet. Check the release notes for signing and notarization details for each version.
+The current VibeSave 0.3.4 download is signed with an Apple Developer ID certificate and notarized by Apple. On first launch, macOS may ask you to confirm that you want to open an app downloaded from the internet. Check the release notes for signing and notarization details for each version.
 
 ## Why We Built VibeSave
 
